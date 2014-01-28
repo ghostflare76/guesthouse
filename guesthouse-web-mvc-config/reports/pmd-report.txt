@@ -1,1 +1,0 @@
-src/main/java/com/cowboy76/guesthouse/web/client/RestTemplateErrorHandler.java:15:	Variables that are final and static should be all capitals, 'log' is not all capitals.
