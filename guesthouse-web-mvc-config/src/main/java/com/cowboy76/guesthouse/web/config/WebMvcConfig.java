@@ -58,6 +58,8 @@ import org.thymeleaf.spring3.SpringTemplateEngine;
 import org.thymeleaf.spring3.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
+import com.cowboy76.guesthouse.web.servlet.view.json.MappingJackson2JsonpView;
+
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "com.cowboy76", useDefaultFilters = false, includeFilters = @ComponentScan.Filter(Controller.class))
@@ -233,10 +235,10 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 		jsonViews.add(mappingJackSon2JsonView);
 		
 		
-		/*MappingJackson2JsonpView mappingJackson2JsonpView = new MappingJackson2JsonpView();
+		MappingJackson2JsonpView mappingJackson2JsonpView = new MappingJackson2JsonpView();
 		mappingJackSon2JsonView.setModelKey("result");
 		mappingJackSon2JsonView.setExtractValueFromSingleKeyModel(true);
-		jsonViews.add(mappingJackson2JsonpView);*/
+		jsonViews.add(mappingJackson2JsonpView);
 		
 		contentNegotiatingViewResolver.setDefaultViews(jsonViews);
 		contentNegotiatingViewResolver.setOrder(2);
