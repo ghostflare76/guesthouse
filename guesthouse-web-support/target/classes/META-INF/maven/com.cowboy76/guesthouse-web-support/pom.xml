@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>guesthouse-web-support</artifactId>
+    <parent>
+		<groupId>com.cowboy76</groupId>
+		<artifactId>guesthouse</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>	
+
+
+	<dependencies>
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${org.springframework-version}</version>			 
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>			 
+		</dependency>
+		
+
+	  	<!--  JSR 303  JSR 303 with Hibernate Validator-->
+	  	<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>	
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.0.0.Final</version>
+		</dependency>
+		
+	
+		
+		<!--  Jackson  --> 
+		 <dependency>
+	    	<groupId>com.fasterxml.jackson.datatype</groupId>
+	    	<artifactId>jackson-datatype-joda</artifactId>
+	   		<version>${jackson-version}</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>com.fasterxml.jackson.datatype</groupId>
+	    	<artifactId>jackson-datatype-hibernate4</artifactId>
+	   		<version>${jackson-version}</version>
+	    </dependency>
+	 	
+	    <!--  Etc Supporting libraries -->
+	    <dependency>
+	    	<groupId>joda-time</groupId>
+	    	<artifactId>joda-time</artifactId>
+	   		<version>2.1</version>
+	    </dependency>
+		
+	
+		
+	</dependencies>
+	
+	
+  
+</project>
