@@ -126,6 +126,32 @@ public class Foo {
             <property name="memberSuffix" value=""/>
         </properties>
     </rule>
+    
+    <rule name="AvoidDeeplyNestedIfStmts" 
+    message="중첩 if then 구문을 깊이 들어가는 것을 피할것, 읽기 어렵고 오류 파악이 힘들다 " class="net.sourceforge.pmd.lang.java.rule.design.AvoidDeeplyNestedIfStmtsRule">
+        <description>
+ Avoid creating deeply nested if-then statements since they are harder to read and error-prone to maintain.
+        </description>
+        <example><![CDATA[
+public class Foo {
+  public void bar(int x, int y, int z) {
+    if (x>y) {
+      if (y>z) {
+        if (z==x) {
+         // !! too deep
+        }
+      }
+    }
+  }
+}
+        ]]></example>
+        <priority>3</priority>
+        <properties>
+            <property name="violationSuppressRegex" value=""/>
+            <property name="violationSuppressXPath" value=""/>
+            <property name="problemDepth" value="3"/>
+        </properties>
+    </rule>
 
     <rule name="AvoidReassigningParameters" 
     message="''{0}'' 처럼 파라미터 값을 직접 변경하지 말것" class="net.sourceforge.pmd.lang.java.rule.design.AvoidReassigningParametersRule">
