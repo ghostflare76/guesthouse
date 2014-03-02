@@ -7,7 +7,10 @@
 	<modules>
 		<module>guesthouse-root-config</module>
 		<module>guesthouse-web-mvc-config</module>
-		<module>guesthouse-web-support</module>	
+		<module>guesthouse-web-support</module>
+		<module>guesthouse-batch-config</module>
+		
+		
 	</modules>
 	
 	<properties>
@@ -27,7 +30,7 @@
 	 <repositories>
 	  <repository>
             <id>spring-releases</id>
-            <url>http://repo.spring.io/releases</url>
+            <url>http://repo.spring.io/release</url>
             <snapshots>
             	<enabled>true</enabled>
             </snapshots>
@@ -150,8 +153,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>${org.slf4j-version}</version>
+			<artifactId>slf4j-api</artifactId>			
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
