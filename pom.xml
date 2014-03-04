@@ -23,6 +23,12 @@
 		<aopalliance-version>1.0</aopalliance-version>
 		<jackson-version>2.2.2</jackson-version>
 		<javax.servlet-version>3.1.0</javax.servlet-version>
+		<javax.validation-version>1.1.0.Final</javax.validation-version>
+		<hibernate.validator-version>5.0.1.Final</hibernate.validator-version>
+		<cglib-version>2.2.2</cglib-version>
+		<guava-version>15.0</guava-version>
+		<joda.time-version>2.1</joda.time-version>
+	
 	</properties>
 	
 	 <repositories>
@@ -209,6 +215,11 @@
 		  	 <groupId>org.aspectj</groupId>
 			 <artifactId>aspectjweaver</artifactId>
 		</dependency>
+		<dependency>
+		  	 <groupId>aopalliance</groupId>
+			 <artifactId>aopalliance</artifactId>
+			 <version>${aopalliance-version}</version>
+		</dependency>
 		
 		<!--  javax  -->	
 		<dependency>
@@ -216,6 +227,55 @@
 			 <artifactId>javax.servlet-api</artifactId>
 			 <version>${javax.servlet-version}</version>
 		</dependency>
+		
+		 <!-- JSR 303 with Hibernate Validator -->
+		 <dependency>
+		  	 <groupId>javax.validation</groupId>
+			 <artifactId>validation-api</artifactId>
+			 <version>${javax.validation-version}</version>
+		</dependency>
+		<dependency>
+		  	 <groupId>org.hibernate</groupId>
+			 <artifactId>hibernate-validator</artifactId>
+			 <version>${hibernate.validator-version}</version>
+		</dependency>
+		
+		  <!-- Etc Supporting libraries --> 
+		<dependency>
+		  	 <groupId>cglib</groupId>
+			 <artifactId>cglib-nodep</artifactId>
+			 <version>${cglib-version}</version>
+		</dependency>
+		<dependency>
+		  	 <groupId>com.google.guava</groupId>
+			 <artifactId>guava</artifactId>
+			 <version>${guava-version}</version>
+		</dependency>
+		<dependency>
+		  	 <groupId>joda-time</groupId>
+			 <artifactId>joda-time</artifactId>
+			 <version>${joda.time-version}</version>
+		</dependency>	
+		
+		<!--  jackson -->
+		<dependency>
+		  	 <groupId>com.fasterxml.jackson.datatype</groupId>
+			 <artifactId>jackson-datatype-joda</artifactId>
+			 <version>${jackson-version}</version>
+		</dependency>	
+		<dependency>
+		  	 <groupId>com.fasterxml.jackson.datatype</groupId>
+			 <artifactId>jackson-datatype-hibernate4</artifactId>
+			 <version>${jackson-version}</version>
+		</dependency>	
+		
+		<!--  Testing -->
+		<dependency>
+		  	 <groupId>org.springframework</groupId>
+			 <artifactId>spring-test</artifactId>
+			 <version>${org.springframework-version}</version>
+			 <scope>test</scope>
+		</dependency>	
 		
 	</dependencies>
 	
