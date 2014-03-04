@@ -28,6 +28,9 @@
 		<cglib-version>2.2.2</cglib-version>
 		<guava-version>15.0</guava-version>
 		<joda.time-version>2.1</joda.time-version>
+		<hamcrest-version>1.3</hamcrest-version>
+		<mockito-version>1.9.5</mockito-version>
+		<junit-version>4.11</junit-version>
 	
 	</properties>
 	
@@ -276,6 +279,28 @@
 			 <version>${org.springframework-version}</version>
 			 <scope>test</scope>
 		</dependency>	
+		<dependency>
+		  	 <groupId>org.hamcrest</groupId>
+			 <artifactId>hamcrest-library</artifactId>
+			 <version>${hamcrest-version}</version>
+			 <scope>test</scope>
+		</dependency>	
+		<dependency>
+		  	 <groupId>org.mockito</groupId>
+			 <artifactId>mockito-core</artifactId>
+			 <version>${mockito-version}</version>
+			 <scope>test</scope>
+		</dependency>	
+		<dependency>
+		  	 <groupId>junit</groupId>
+			 <artifactId>junit</artifactId>
+			 <version>${junit-version}</version>
+			 <scope>test</scope>
+		</dependency>	
+		
+		
+		
+		
 		
 	</dependencies>
 	
