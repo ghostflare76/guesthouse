@@ -10,6 +10,7 @@
 		<module>guesthouse-web-mvc-config</module>
 		<module>guesthouse-web-support</module>
 		<module>guesthouse-batch-config</module>
+		<module>guesthouse-database-config</module>
   </modules>
 	
 	<properties>
