@@ -1,4 +1,4 @@
-package org.guesthouse.batch.config;
+package org.cowboy76.guesthouse.batch.config;
 
 
 import org.apache.tomcat.jdbc.pool.DataSource;
